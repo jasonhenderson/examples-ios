@@ -15,6 +15,7 @@ Shows basic use of a UITableView, and also shows how you can work with custom ce
 
 ### Swizzling
 > For instructional purposes only. It is not advised to take the risk using this technique in production code, unless there is "no alternative".
+
 Basic introduction to how one might swizzle a method as well as possible, an explanation of what is occurring, in both Swift and Objective-C.
 
 ### AFNetworking and AlamoFire
