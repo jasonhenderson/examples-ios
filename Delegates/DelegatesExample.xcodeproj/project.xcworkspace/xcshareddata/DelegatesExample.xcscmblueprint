@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8E6185B8136618456AB267ECA61B1787A3BB5F9F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8E6185B8136618456AB267ECA61B1787A3BB5F9F" : 0,
+    "FA4A3A680E60F5E1200264B14C89E183FDAC5AAA" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "60AA752A-C36D-46A2-AAE1-6A48B8F5DBFE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8E6185B8136618456AB267ECA61B1787A3BB5F9F" : "Delegates\/",
+    "FA4A3A680E60F5E1200264B14C89E183FDAC5AAA" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DelegatesExample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DelegatesExample.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/gitlab.com\/csumb\/ios-example-delegate.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8E6185B8136618456AB267ECA61B1787A3BB5F9F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jasonhenderson\/examples-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FA4A3A680E60F5E1200264B14C89E183FDAC5AAA"
+    }
+  ]
+}

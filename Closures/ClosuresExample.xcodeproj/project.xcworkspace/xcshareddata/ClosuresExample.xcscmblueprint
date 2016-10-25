@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "CFB2A409B41A70C0D0FF183EFD1EA4CCEC3D214C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "FA4A3A680E60F5E1200264B14C89E183FDAC5AAA" : 0,
+    "CFB2A409B41A70C0D0FF183EFD1EA4CCEC3D214C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3C6C78FF-C060-4501-B1E7-C2EE94C634B8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "FA4A3A680E60F5E1200264B14C89E183FDAC5AAA" : "",
+    "CFB2A409B41A70C0D0FF183EFD1EA4CCEC3D214C" : "Closures\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ClosuresExample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ClosuresExample.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/gitlab.com\/csumb\/ios-example-closures.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CFB2A409B41A70C0D0FF183EFD1EA4CCEC3D214C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jasonhenderson\/examples-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FA4A3A680E60F5E1200264B14C89E183FDAC5AAA"
+    }
+  ]
+}
