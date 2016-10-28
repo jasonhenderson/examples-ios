@@ -36,6 +36,12 @@ Coming soon.
 ### Share Extension
 Coming soon.
 
+### Import and Export
+Coming soon.
+
+### Camera
+Coming soon.
+
 ### AVFoundation
 Coming soon.
 
