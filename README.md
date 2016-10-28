@@ -18,6 +18,9 @@ Shows basic use of a UITableView, and also shows how you can work with custom ce
 
 Basic introduction to how one might swizzle a method as well as possible, an explanation of what is occurring, in both Swift and Objective-C.
 
+### UIPicker and UIResponder
+Coming soon.
+
 ### AFNetworking and AlamoFire
 Coming soon.
 
@@ -28,6 +31,9 @@ Coming soon.
 Coming soon.
 
 ### Core Location
+Coming soon.
+
+### Share Extension
 Coming soon.
 
 ### AVFoundation
