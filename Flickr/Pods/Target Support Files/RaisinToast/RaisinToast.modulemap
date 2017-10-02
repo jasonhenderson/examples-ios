@@ -1,0 +1,6 @@
+framework module RaisinToast {
+  umbrella header "RaisinToast-umbrella.h"
+
+  export *
+  module * { export * }
+}

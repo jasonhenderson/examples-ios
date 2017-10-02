@@ -1,0 +1,64 @@
+//
+//  PrefixHeader.pch
+//  FlickrEssentials
+//
+//  Created by Jason Henderson on 4/21/17.
+//  Copyright © 2017 CSUMB. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// ORDER MATTERS
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "Reachability.h"
+
+// Global Frameworks
+#import <CocoaLumberjack/CocoaLumberjack.h>
+
+// Define your logging level in your implementation file:
+// Log levels: off, error, warn, info, verbose
+static const DDLogLevel appLogLevel = DDLogLevelVerbose;
+
+#ifndef LOG_LEVEL_DEF
+#define LOG_LEVEL_DEF appLogLevel
+#endif
+
+#ifndef LOG_ASYNC_ENABLED
+#define LOG_ASYNC_ENABLED 1
+#endif
+
+#if DEBUG
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static const DDLogLevel ddLogLevel = DDLogLevelOff;
+#endif
+
+#import <CoreData/CoreData.h>
+#import <MagicalRecord/MagicalRecord.h>
+
+// Global categories
+#import "NSManagedObjectModel+KCOrderedAccessorFix.h"
+#import "NSManagedObject+MagicalRequests.h"
+
+// User info popups
+#import "RZMessagingWindow.h"
+#import "RZErrorMessenger.h"
+
+// Application services and statics
+#import "AppDelegate.h"
+#import "AppData.h"
+#import "APIHelper.h"
+#import "APIPhotoCallResult.h"
+
+// Progress indicator
+#import "MBProgressHUD.h"
+
+// So we can see swift classes in obj-c
+#import "FlickrEssentials-Swift.h"
+
+#endif /* PrefixHeader_pch */

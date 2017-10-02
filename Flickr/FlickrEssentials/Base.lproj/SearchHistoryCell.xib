@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchHistoryCell" rowHeight="79" id="1qv-q4-5zo" userLabel="History Cell" customClass="SearchHistoryTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1qv-q4-5zo" id="VS8-sW-cQY">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ge-bK-HnQ" userLabel="Search Text">
+                        <rect key="frame" x="8" y="8" width="584" height="33.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4g-dp-oUP" userLabel="Date">
+                        <rect key="frame" x="8" y="49" width="584" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3Ge-bK-HnQ" firstAttribute="leading" secondItem="VS8-sW-cQY" secondAttribute="leadingMargin" id="RUG-Uk-fXg"/>
+                    <constraint firstItem="3Ge-bK-HnQ" firstAttribute="trailing" secondItem="VS8-sW-cQY" secondAttribute="trailingMargin" id="TQA-yt-jP4"/>
+                    <constraint firstItem="f4g-dp-oUP" firstAttribute="top" secondItem="3Ge-bK-HnQ" secondAttribute="bottom" constant="7.5" id="Vr9-6T-1Ei"/>
+                    <constraint firstItem="3Ge-bK-HnQ" firstAttribute="top" secondItem="VS8-sW-cQY" secondAttribute="topMargin" id="Z7I-Uu-AKZ"/>
+                    <constraint firstItem="3Ge-bK-HnQ" firstAttribute="trailing" secondItem="f4g-dp-oUP" secondAttribute="trailing" id="eAS-iu-JMb"/>
+                    <constraint firstItem="3Ge-bK-HnQ" firstAttribute="leading" secondItem="f4g-dp-oUP" secondAttribute="leading" id="qiW-U8-VgS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="f4g-dp-oUP" id="QcE-S1-faZ"/>
+                <outlet property="searchTextLabel" destination="3Ge-bK-HnQ" id="x7g-JE-aNi"/>
+            </connections>
+            <point key="canvasLocation" x="-115" y="196"/>
+        </tableViewCell>
+    </objects>
+</document>

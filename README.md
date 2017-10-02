@@ -1,6 +1,8 @@
 # examples-ios
 Examples covering a variety of iOS topics and concepts, in Swift and Objective-C
 
+## Examples
+
 ### Closures
 Basic closure patterns for executing code on background queues to free up the main queue, as well as callbacks from long running operations. A quick peek at declaring closures for running blocks within functions is also included.
 
@@ -18,13 +20,16 @@ Shows basic use of a UITableView, and also shows how you can work with custom ce
 
 Basic introduction to how one might swizzle a method as well as possible, an explanation of what is occurring, in both Swift and Objective-C.
 
-### pods
-Coming soon.
+### Flickr Essentials
+A broader example that showcases some basic examples for:
+* Using REST API on internet using AlamoFire
+* Moving form when keyboard goes up and down
+* UITableView use
+* UIScrollView use
+* Toast
+* Progress Bar
 
 ### UIPicker and UIResponder
-Coming soon.
-
-### AFNetworking and AlamoFire
 Coming soon.
 
 ### Core Data
@@ -39,6 +44,9 @@ Coming soon.
 ### Share Extension
 Coming soon.
 
+### Watch Extension
+Coming soon.
+
 ### Import and Export
 Coming soon.
 
@@ -48,5 +56,10 @@ Coming soon.
 ### AVFoundation
 Coming soon.
 
-*Please let me know what other special topics would be useful to cover*
+## Challenges
+How to approach some of the challenges assigned in class.
 
+* NSNotifications and Delegates
+
+
+*Please let me know what other special topics would be useful to cover*
