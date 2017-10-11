@@ -31,6 +31,16 @@ class MainViewController: UIViewController, ModifyImageViewControllerDelegate {
         childVC.delegate = self
         childVC.dataSource = Global.shared
         
+        // You can also directly attach to closure properties...
+        childVC.onStart = {
+            print("processing starting")
+        }
+        
+        childVC.onDone = { (_ updateText:String) -> Int in
+            print("processing done: \(updateText)")
+            return 0
+        }
+        
         // Present
         self.present(childVC, animated:true, completion:nil)
     }

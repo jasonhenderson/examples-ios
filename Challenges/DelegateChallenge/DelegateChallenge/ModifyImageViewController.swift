@@ -22,9 +22,17 @@ class ModifyImageViewController: UIViewController {
     weak var delegate:ModifyImageViewControllerDelegate?
     weak var dataSource:TransformationDataSource?
     
+    var onStart: (() -> Void)?
+    var onDone: ((_ updateText:String) -> Int)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        if let start = self.onStart {
+            start()
+        }
+        
+        _ = self.onDone?("Yes I Am")
     }
 
     override func didReceiveMemoryWarning() {
