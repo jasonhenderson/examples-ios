@@ -1,0 +1,46 @@
+PODS:
+  - Alamofire (4.5.1)
+  - JPSVolumeButtonHandler (1.0.5)
+  - KIF (3.6.0):
+    - KIF/Core (= 3.6.0)
+  - KIF/Core (3.6.0)
+  - KIF/IdentifierTests (3.6.0):
+    - KIF/Core
+  - Toast-Swift (2.0.0)
+  - Unbox (2.5.0)
+  - UnboxedAlamofire (2.0.4):
+    - Alamofire (~> 4.1)
+    - Unbox (~> 2.0)
+  - Wrap (2.1.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - JPSVolumeButtonHandler
+  - KIF
+  - KIF/IdentifierTests
+  - Toast-Swift (from `https://github.com/jasonhenderson/Toast-Swift.git`)
+  - Unbox
+  - UnboxedAlamofire (~> 2.0)
+  - Wrap
+
+EXTERNAL SOURCES:
+  Toast-Swift:
+    :git: https://github.com/jasonhenderson/Toast-Swift.git
+
+CHECKOUT OPTIONS:
+  Toast-Swift:
+    :commit: b149d4bf838c994ac1d878e166ac8d1fc8009e75
+    :git: https://github.com/jasonhenderson/Toast-Swift.git
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  JPSVolumeButtonHandler: 53110330c9168ed325def93eabff39f0fe3e8082
+  KIF: bd770edd8ce49bc7308501e4871e58a02d137be3
+  Toast-Swift: 5b2f8f720f7e78e48511f693df1f9c9a6e38a25a
+  Unbox: 30e437e6151a6de16139375fd4e8dd9a664cfbf7
+  UnboxedAlamofire: e803f471553e3aecec711f5d50f80cda6c65feaa
+  Wrap: 9cc7da7551bb81d0846cb3df9fb624c6c32d267d
+
+PODFILE CHECKSUM: 2e7d36f8ee5dcda208b93aeb53a02e7d9c8a2367
+
+COCOAPODS: 1.1.1

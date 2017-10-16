@@ -1,0 +1,26 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+
+target 'WebServices' do
+  # Using Swift and dynamic frameworks, so… (need this)
+  use_frameworks!
+
+  # Pods for WebServices
+  pod 'Wrap' # structs to JSON dictionaries
+  pod 'Unbox' # JSON string to structs
+  pod 'Alamofire', '~> 4.5'
+  pod 'UnboxedAlamofire', '~> 2.0'
+
+  # For app info toasts
+  pod 'Toast-Swift', :git => 'https://github.com/jasonhenderson/Toast-Swift.git'
+
+  # Something extra to use the volume buttons to do stuff (just for fun)
+  pod 'JPSVolumeButtonHandler'
+
+  target 'WebServicesTests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'KIF', :configurations => ['Debug']
+    pod 'KIF/IdentifierTests', :configurations => ['Debug']
+  end
+end
