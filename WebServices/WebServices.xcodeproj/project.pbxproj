@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		583E0732D44E7EDA7875CFF9 /* Pods_WebServicesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F6A2217494F4B0AD072C25 /* Pods_WebServicesTests.framework */; };
+		C587477A1F97D2E600168EB6 /* Error+ErrorLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58747791F97D2E600168EB6 /* Error+ErrorLevel.swift */; };
+		C587477D1F97D34500168EB6 /* Array+ErrorLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C587477C1F97D34500168EB6 /* Array+ErrorLevel.swift */; };
+		C587477F1F97D3EC00168EB6 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C587477E1F97D3EC00168EB6 /* ApiError.swift */; };
 		C5BF230B1F95123C003C0E19 /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BF230A1F95123C003C0E19 /* ApiHelper.swift */; };
 		C5BF230D1F95133F003C0E19 /* ApiDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BF230C1F95133F003C0E19 /* ApiDictionary.swift */; };
 		C5DC57EA1F943CE700E097A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DC57E91F943CE700E097A5 /* AppDelegate.swift */; };
@@ -33,6 +36,9 @@
 		1F65692F625BB2127E822406 /* Pods-WebServices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebServices.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebServices/Pods-WebServices.release.xcconfig"; sourceTree = "<group>"; };
 		2E37DD51ABB0B4F25E281BC4 /* Pods_WebServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFAC5CAE9C4E87172CBE271 /* Pods-WebServicesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebServicesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebServicesTests/Pods-WebServicesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C58747791F97D2E600168EB6 /* Error+ErrorLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Error+ErrorLevel.swift"; sourceTree = "<group>"; };
+		C587477C1F97D34500168EB6 /* Array+ErrorLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+ErrorLevel.swift"; sourceTree = "<group>"; };
+		C587477E1F97D3EC00168EB6 /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		C5BF230A1F95123C003C0E19 /* ApiHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
 		C5BF230C1F95133F003C0E19 /* ApiDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiDictionary.swift; sourceTree = "<group>"; };
 		C5DC57E61F943CE700E097A5 /* WebServices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebServices.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +96,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C587477B1F97D2ED00168EB6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C5BF230C1F95133F003C0E19 /* ApiDictionary.swift */,
+				C58747791F97D2E600168EB6 /* Error+ErrorLevel.swift */,
+				C587477C1F97D34500168EB6 /* Array+ErrorLevel.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C5DC57DD1F943CE700E097A5 = {
 			isa = PBXGroup;
 			children = (
@@ -113,10 +129,11 @@
 		C5DC57E81F943CE700E097A5 /* WebServices */ = {
 			isa = PBXGroup;
 			children = (
-				C5BF230C1F95133F003C0E19 /* ApiDictionary.swift */,
+				C587477E1F97D3EC00168EB6 /* ApiError.swift */,
 				C5BF230A1F95123C003C0E19 /* ApiHelper.swift */,
 				C5DC57E91F943CE700E097A5 /* AppDelegate.swift */,
 				C5DC57F01F943CE700E097A5 /* Assets.xcassets */,
+				C587477B1F97D2ED00168EB6 /* Extensions */,
 				C5DC57F51F943CE700E097A5 /* Info.plist */,
 				C5DC57F21F943CE700E097A5 /* LaunchScreen.storyboard */,
 				C5DC57ED1F943CE700E097A5 /* Main.storyboard */,
@@ -338,10 +355,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C587477F1F97D3EC00168EB6 /* ApiError.swift in Sources */,
+				C587477A1F97D2E600168EB6 /* Error+ErrorLevel.swift in Sources */,
 				C5BF230B1F95123C003C0E19 /* ApiHelper.swift in Sources */,
 				C5DC57EC1F943CE700E097A5 /* ViewController.swift in Sources */,
 				C5BF230D1F95133F003C0E19 /* ApiDictionary.swift in Sources */,
 				C5DC57EA1F943CE700E097A5 /* AppDelegate.swift in Sources */,
+				C587477D1F97D34500168EB6 /* Array+ErrorLevel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
