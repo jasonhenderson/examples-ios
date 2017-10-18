@@ -4,6 +4,8 @@ platform :ios, '10.0'
 target 'WebServices' do
   # Using Swift and dynamic frameworks, so… (need this)
   use_frameworks!
+  
+  pod 'ReachabilitySwift'
 
   # Pods for WebServices
   pod 'Wrap' # structs to JSON dictionaries

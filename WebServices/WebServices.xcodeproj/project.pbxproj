@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		583E0732D44E7EDA7875CFF9 /* Pods_WebServicesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F6A2217494F4B0AD072C25 /* Pods_WebServicesTests.framework */; };
+		C5BF230B1F95123C003C0E19 /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BF230A1F95123C003C0E19 /* ApiHelper.swift */; };
+		C5BF230D1F95133F003C0E19 /* ApiDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BF230C1F95133F003C0E19 /* ApiDictionary.swift */; };
 		C5DC57EA1F943CE700E097A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DC57E91F943CE700E097A5 /* AppDelegate.swift */; };
 		C5DC57EC1F943CE700E097A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DC57EB1F943CE700E097A5 /* ViewController.swift */; };
 		C5DC57EF1F943CE700E097A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5DC57ED1F943CE700E097A5 /* Main.storyboard */; };
@@ -31,6 +33,8 @@
 		1F65692F625BB2127E822406 /* Pods-WebServices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebServices.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebServices/Pods-WebServices.release.xcconfig"; sourceTree = "<group>"; };
 		2E37DD51ABB0B4F25E281BC4 /* Pods_WebServices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CFAC5CAE9C4E87172CBE271 /* Pods-WebServicesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebServicesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebServicesTests/Pods-WebServicesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C5BF230A1F95123C003C0E19 /* ApiHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
+		C5BF230C1F95133F003C0E19 /* ApiDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiDictionary.swift; sourceTree = "<group>"; };
 		C5DC57E61F943CE700E097A5 /* WebServices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebServices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5DC57E91F943CE700E097A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5DC57EB1F943CE700E097A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,12 +113,14 @@
 		C5DC57E81F943CE700E097A5 /* WebServices */ = {
 			isa = PBXGroup;
 			children = (
+				C5BF230C1F95133F003C0E19 /* ApiDictionary.swift */,
+				C5BF230A1F95123C003C0E19 /* ApiHelper.swift */,
 				C5DC57E91F943CE700E097A5 /* AppDelegate.swift */,
-				C5DC57EB1F943CE700E097A5 /* ViewController.swift */,
-				C5DC57ED1F943CE700E097A5 /* Main.storyboard */,
 				C5DC57F01F943CE700E097A5 /* Assets.xcassets */,
-				C5DC57F21F943CE700E097A5 /* LaunchScreen.storyboard */,
 				C5DC57F51F943CE700E097A5 /* Info.plist */,
+				C5DC57F21F943CE700E097A5 /* LaunchScreen.storyboard */,
+				C5DC57ED1F943CE700E097A5 /* Main.storyboard */,
+				C5DC57EB1F943CE700E097A5 /* ViewController.swift */,
 			);
 			path = WebServices;
 			sourceTree = "<group>";
@@ -262,7 +268,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		3C101A3B7B313CB1A54B093B /* [CP] Copy Pods Resources */ = {
@@ -292,7 +298,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D17EDB976E7C8988E3E3FB94 /* [CP] Embed Pods Frameworks */ = {
@@ -332,7 +338,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5BF230B1F95123C003C0E19 /* ApiHelper.swift in Sources */,
 				C5DC57EC1F943CE700E097A5 /* ViewController.swift in Sources */,
+				C5BF230D1F95133F003C0E19 /* ApiDictionary.swift in Sources */,
 				C5DC57EA1F943CE700E097A5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,6 +557,7 @@
 				C5DC58051F943CE800E097A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5DC58061F943CE800E097A5 /* Build configuration list for PBXNativeTarget "WebServicesTests" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +566,7 @@
 				C5DC58081F943CE800E097A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

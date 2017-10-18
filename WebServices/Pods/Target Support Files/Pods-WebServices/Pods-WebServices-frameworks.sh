@@ -86,6 +86,7 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/JPSVolumeButtonHandler/JPSVolumeButtonHandler.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReachabilitySwift/Reachability.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Toast-Swift/Toast_Swift.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Unbox/Unbox.framework"
   install_framework "$BUILT_PRODUCTS_DIR/UnboxedAlamofire/UnboxedAlamofire.framework"
@@ -94,6 +95,7 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/JPSVolumeButtonHandler/JPSVolumeButtonHandler.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReachabilitySwift/Reachability.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Toast-Swift/Toast_Swift.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Unbox/Unbox.framework"
   install_framework "$BUILT_PRODUCTS_DIR/UnboxedAlamofire/UnboxedAlamofire.framework"
