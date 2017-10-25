@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Settings" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="55H-Qs-v9T">
+                                <rect key="frame" x="73" y="49" width="238" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypT-Dk-pb0">
+                                <rect key="frame" x="16" y="54" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xA-Aw-xfw">
+                                <rect key="frame" x="319" y="49" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="savePhoneTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q0U-0H-0gf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite Num" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="032-nD-q3a">
+                                <rect key="frame" x="16" y="87" width="107" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="GAg-5q-hDS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8LO-7s-L7L">
+                                <rect key="frame" x="131" y="86" width="180" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ypT-Dk-pb0" firstAttribute="leading" secondItem="032-nD-q3a" secondAttribute="leading" id="66R-wc-K3N"/>
+                            <constraint firstItem="8LO-7s-L7L" firstAttribute="leading" secondItem="032-nD-q3a" secondAttribute="trailing" constant="8" symbolic="YES" id="6bW-My-ZJG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8LO-7s-L7L" secondAttribute="trailing" constant="48" id="DWW-ss-zE8"/>
+                            <constraint firstItem="032-nD-q3a" firstAttribute="top" secondItem="55H-Qs-v9T" secondAttribute="bottom" constant="8" symbolic="YES" id="Ky0-aV-vCl"/>
+                            <constraint firstItem="55H-Qs-v9T" firstAttribute="leading" secondItem="ypT-Dk-pb0" secondAttribute="trailing" constant="8" symbolic="YES" id="Zjm-Uh-Zmf"/>
+                            <constraint firstItem="55H-Qs-v9T" firstAttribute="trailing" secondItem="8LO-7s-L7L" secondAttribute="trailing" id="cWx-cR-I2f"/>
+                            <constraint firstItem="1xA-Aw-xfw" firstAttribute="leading" secondItem="55H-Qs-v9T" secondAttribute="trailing" constant="8" symbolic="YES" id="fNN-nU-040"/>
+                            <constraint firstItem="ypT-Dk-pb0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hLy-fi-e4h"/>
+                            <constraint firstItem="8LO-7s-L7L" firstAttribute="top" secondItem="55H-Qs-v9T" secondAttribute="bottom" constant="7" id="kLe-Lx-AAB"/>
+                            <constraint firstItem="ypT-Dk-pb0" firstAttribute="centerY" secondItem="55H-Qs-v9T" secondAttribute="centerY" id="nY0-AV-wg1"/>
+                            <constraint firstItem="55H-Qs-v9T" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="29" id="oyW-G7-Bbj"/>
+                            <constraint firstItem="55H-Qs-v9T" firstAttribute="top" secondItem="1xA-Aw-xfw" secondAttribute="top" id="vh9-dk-bDe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="favoriteNumberLabel" destination="8LO-7s-L7L" id="hfC-XL-GI2"/>
+                        <outlet property="phoneTextField" destination="55H-Qs-v9T" id="AeK-V4-Qrt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
